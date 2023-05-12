@@ -1,3 +1,5 @@
+// ******************** UNIDAD 1***************************
+
 /* Ejercicio 1
 let nombreEj1 = prompt ("Ingrese su nombre:")
 let apellidoEj1 = prompt ("Ingrese su apellido:")
@@ -45,4 +47,43 @@ let sueldoSinAntigue = valorHora * cantHoras
 alert("El sueldo mensual en USD del colaborador es sin Antiguedad es : "+sueldoSinAntigue)
 let sueldoConAntigue = sueldoSinAntigue + (antiguedad*sueldoSinAntigue*0.15)
 alert("El sueldo mensual en USD del colaborador es : "+sueldoConAntigue)
+*/
+
+/* Ejercicio 6
+Realizar un sistema para el cálculo de sueldo de una empresa de seguros. Se le solicita que ingrese el valor de la hora, la cantidad de horas trabajadas en el mes, los años de antigüedad, la cantidad de seguros vendidos y el valor del seguro más caro vendido.
+Realice un programa para calcular e informar el sueldo mensual del empleado, teniendo en cuenta que se le asigna un bono igual al 50% del seguro más caro vendido, un bono igual al 25% del sueldo por la cantidad de seguros vendidos y otro bono igual al 15% del sueldo por año de antigüedad. Una vez obtenido el sueldo final, calcular e informar el valor promedio de la hora del empleado.
+*/
+
+// ******************** UNIDAD 2 ***************************
+/* Ejercicio 7 
+let numero = prompt("Ingrese un numero: ");
+
+function esPar(num)
+{
+return (num % 2) == 0;
+}
+
+numeroValidacion = esPar (numero);
+if (numero == 0){
+    alert ("Su numero es 0");
+} else if(numeroValidacion == true){
+    alert ("Es par");
+    }  else  {
+        alert ("Es impar");
+}
+*/
+
+/* Ejercicio 8
+let numero = prompt("Ingrese un numero: ");
+
+function esMultiplo(num) {
+    return (num % 3) == 0;
+}
+
+numeroValidacion = esMultiplo(numero);
+if (numeroValidacion == true) {
+    alert("Es multiplo")
+} else {
+    alert("No es multiplo");
+}
 */

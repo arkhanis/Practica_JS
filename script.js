@@ -36,3 +36,13 @@ let cantHoras = prompt ("Ingrese la cantidad de horas laborales en el mes: ")
 let sueldo = valorHora * cantHoras
 console.log("El sueldo mensual en USD del colaborador es : "+sueldo)
 */
+
+/* Ejercicio 5
+let valorHora = prompt ("Ingrese el valor de la hora (en USD) del colaborador: ")
+let cantHoras = prompt ("Ingrese la cantidad de horas laborales en el mes: ")
+let antiguedad = prompt ("Ingrese sus años de antiguedad: ")
+let sueldoSinAntigue = valorHora * cantHoras
+alert("El sueldo mensual en USD del colaborador es sin Antiguedad es : "+sueldoSinAntigue)
+let sueldoConAntigue = sueldoSinAntigue + (antiguedad*sueldoSinAntigue*0.15)
+alert("El sueldo mensual en USD del colaborador es : "+sueldoConAntigue)
+*/

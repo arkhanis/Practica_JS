@@ -85,5 +85,40 @@ if (numeroValidacion == true) {
     alert("Es multiplo")
 } else {
     alert("No es multiplo");
+}*/
+
+/*Ejercicios 9
+let letra = prompt("Ingrese una letra: ");
+if(letra=="a" || letra=="e" || letra=="i" || letra=="o" || letra=="u"){
+alert("Su letra ES una vocal");
+} else {
+    alert("Su letra NO es una vocal");
+}*/
+
+/*Ejercicios 9*/
+alert("Suponga un rango de numeros con un principio y un final numérico")
+let numInicial = prompt("Ingrese el numero inicial de ese rango: ");
+let numFinal = prompt("Ingrese el numero final de ese rango: ");
+let numeroValidacion = prompt("Ingrese el numero a validar: ");
+
+if (numInicial <= numeroValidacion || numFinal >= numeroValidacion){
+    alert("Estoy dentro")
+} else {
+    alert("estoy fuera")
 }
-*/
+
+/*numeroValidacion
+
+function esPar(num)
+{
+return (num % 2) == 0;
+}
+
+numeroValidacion = esPar (numero);
+if (numero == 0){
+    alert ("Su numero es 0");
+} else if(numeroValidacion == true){
+    alert ("Es par");
+    }  else  {
+        alert ("Es impar");
+}*/

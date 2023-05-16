@@ -133,12 +133,11 @@ if ((numFinal - numInicial) > 5) {
     }
 }*/
 
-/*Ejercicios 11*/
+/*Ejercicios 11
 let primerNumero = parseInt(prompt("Ingrese el primer numero: "));
 let segundoNumero = parseInt(prompt("Ingrese el segundo numero: "));
 let signo = prompt("ingrese la operacion matematica que desee hacer con ellos ( + o - o * o / ): ");
 let resultado = 0;
-
 switch (signo) {
     case "+":
         resultado = primerNumero + segundoNumero;
@@ -156,6 +155,6 @@ switch (signo) {
         resultado = primerNumero * segundoNumero;
         alert("Su resultado es: " + resultado);
         break;
-}
+}*/
 
 

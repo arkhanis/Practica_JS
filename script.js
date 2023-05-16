@@ -95,30 +95,67 @@ alert("Su letra ES una vocal");
     alert("Su letra NO es una vocal");
 }*/
 
-/*Ejercicios 9*/
-alert("Suponga un rango de numeros con un principio y un final numérico")
-let numInicial = prompt("Ingrese el numero inicial de ese rango: ");
-let numFinal = prompt("Ingrese el numero final de ese rango: ");
-let numeroValidacion = prompt("Ingrese el numero a validar: ");
+/*Ejercicios 10
+alert("Suponga un rango de números con un principio y un final numérico")
+let numInicial = parseInt(prompt("Ingrese el número inicial de ese rango: "));
+let numFinal = parseInt(prompt("Ingrese el número final de ese rango: "));
 
-if (numInicial <= numeroValidacion || numFinal >= numeroValidacion){
-    alert("Estoy dentro")
+if ((numFinal - numInicial) > 5) {
+    function esPar(num) {
+        if (num % 2 == 0) {
+            return alert(num + " es par");
+        } else {
+            return alert(num + " es impar");
+        }
+    }
+    //      1----------5                     10-----------5   
+    let numeroValidacion = parseInt(prompt("Ingrese el número a validar: "));
+    if ((numInicial <= numeroValidacion) && (numFinal >= numeroValidacion)) {
+        alert("Estoy dentro");
+        esPar(numeroValidacion);
+    } else {
+        alert("estoy fuera")
+        esPar(numeroValidacion);
+    }
 } else {
-    alert("estoy fuera")
-}
+    do {
+        alert("El rango de numeros como minimo debe tener 5 numeros enteros");
+        numInicial = parseInt(prompt("Ingrese el número inicial de ese rango: "));
+        numFinal = parseInt(prompt("Ingrese el número final de ese rango: "));
+    } while ((numFinal - numInicial) <= 5);
+    if ((numInicial <= numeroValidacion) && (numFinal >= numeroValidacion)) {
+        alert("Estoy dentro");
+        esPar(numeroValidacion);
 
-/*numeroValidacion
-
-function esPar(num)
-{
-return (num % 2) == 0;
-}
-
-numeroValidacion = esPar (numero);
-if (numero == 0){
-    alert ("Su numero es 0");
-} else if(numeroValidacion == true){
-    alert ("Es par");
-    }  else  {
-        alert ("Es impar");
+    } else {
+        alert("estoy fuera")
+        esPar(numeroValidacion);
+    }
 }*/
+
+/*Ejercicios 11*/
+let primerNumero = parseInt(prompt("Ingrese el primer numero: "));
+let segundoNumero = parseInt(prompt("Ingrese el segundo numero: "));
+let signo = prompt("ingrese la operacion matematica que desee hacer con ellos ( + o - o * o / ): ");
+let resultado = 0;
+
+switch (signo) {
+    case "+":
+        resultado = primerNumero + segundoNumero;
+        alert("Su resultado es: " + resultado);
+        break;
+    case "-":
+        resultado = primerNumero - segundoNumero;
+        alert("Su resultado es: " + resultado);
+        break;
+    case "/":
+        resultado = primerNumero / segundoNumero;
+        alert("Su resultado es: " + resultado);
+        break;
+    case "*":
+        resultado = primerNumero * segundoNumero;
+        alert("Su resultado es: " + resultado);
+        break;
+}
+
+

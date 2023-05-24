@@ -157,6 +157,22 @@ switch (signo) {
         break;
 }*/
 
+/* Ejercicio 17 */
 
+// pido nota y la acumulo en el array hasta que ingrese X letra para cerrar la carga
+// CANTIDAD DE ALUMNOS: mido el lenght del array
+// CANTIDAD de APROBADOS: mido la cantidad de notas que superaron o igualaron la nota 4
+// SUMA NOTA de APROBADOS: sumo la cantidad de notas que superaron o igualaron la nota 4
+// REPROBADOS: mido la cantidad de notas que NO superaron o igualaron la nota 4
+// SUMA NOTA de REPROBADOS: sumo la cantidad de notas que NO superaron o igualaron la nota 4
 
+const listaNotas = [];
+entrada = "";
 
+do {
+    let entrada = prompt("Ingresar las notas, tipear *f* para finalizar : ");
+    listaNotas.push(entrada);
+
+} while (entrada != "f")
+
+console.log(listaNotas)

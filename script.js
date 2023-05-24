@@ -167,10 +167,10 @@ switch (signo) {
 // SUMA NOTA de REPROBADOS: sumo la cantidad de notas que NO superaron o igualaron la nota 4
 
 const listaNotas = [];
-entrada = "";
+let entrada = "";
 
 do {
-    let entrada = prompt("Ingresar las notas, tipear *f* para finalizar : ");
+    entrada = prompt("Ingresar las notas, tipear *f* para finalizar : ");
     listaNotas.push(entrada);
 
 } while (entrada != "f")

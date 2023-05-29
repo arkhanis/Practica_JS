@@ -157,7 +157,14 @@ switch (signo) {
         break;
 }*/
 
-/* Ejercicio 17 */
+/* Ejercicio 17 
+
+Se le solicita al usuario que ingrese las notas del parcial de los alumnos de una comisión. Se desconoce la cantidad de alumnos. Realice el algoritmo para informar:
+a. El porcentaje de alumnos aprobados (nota igual o superior a 4).
+b. El porcentaje de alumnos desaprobados (nota inferior a 4).
+c. El promedio de las notas.
+
+Tenga en cuenta que solamente las notas pueden ir del 1 al 10.*/
 
 // pido nota y la acumulo en el array hasta que ingrese X letra para cerrar la carga
 // CANTIDAD DE ALUMNOS: mido el lenght del array
@@ -166,13 +173,26 @@ switch (signo) {
 // REPROBADOS: mido la cantidad de notas que NO superaron o igualaron la nota 4
 // SUMA NOTA de REPROBADOS: sumo la cantidad de notas que NO superaron o igualaron la nota 4
 
-const listaNotas = [];
-let entrada = "";
+let alumnoNotas = [];
+let cantidadNotas = 6;
+let aprobados = 0;
+let reprobados = 0;
 
-do {
-    entrada = prompt("Ingresar las notas, tipear *f* para finalizar : ");
-    listaNotas.push(entrada);
+alert("A continuación deberás ingresar las notas, sabiendo:");
+alert("*A* Deben ser del 1 al 10");
+alert("*B* Finalizar la carga con la letra *f*");
 
-} while (entrada != "f")
+do{
+    let nota = prompt("Ingresar nota: ");
+    alumnoNotas.push(nota);
+    console.log(alumnoNotas.length);
+    console.log(alumnoNotas);
+}while (alumnoNotas.length != cantidadNotas)
 
-console.log(listaNotas)
+alumnoNotas.forEach((nota) => 
+    if (nota >= 4){
+        aprobados++;
+    } else {
+        
+    }
+    );

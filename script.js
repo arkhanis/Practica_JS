@@ -157,26 +157,21 @@ switch (signo) {
         break;
 }*/
 
-/* Ejercicio 17 
+/* Ejercicio 17 *******************************************************
 
 Se le solicita al usuario que ingrese las notas del parcial de los alumnos de una comisión. Se desconoce la cantidad de alumnos. Realice el algoritmo para informar:
 a. El porcentaje de alumnos aprobados (nota igual o superior a 4).
 b. El porcentaje de alumnos desaprobados (nota inferior a 4).
 c. El promedio de las notas.
 
-Tenga en cuenta que solamente las notas pueden ir del 1 al 10.*/
-
-// pido nota y la acumulo en el array hasta que ingrese X letra para cerrar la carga
-// CANTIDAD DE ALUMNOS: mido el lenght del array
-// CANTIDAD de APROBADOS: mido la cantidad de notas que superaron o igualaron la nota 4
-// SUMA NOTA de APROBADOS: sumo la cantidad de notas que superaron o igualaron la nota 4
-// REPROBADOS: mido la cantidad de notas que NO superaron o igualaron la nota 4
-// SUMA NOTA de REPROBADOS: sumo la cantidad de notas que NO superaron o igualaron la nota 4
+Tenga en cuenta que solamente las notas pueden ir del 1 al 10.
 
 let alumnoNotas = [];
+let nota = 0;
 let cantidadNotas = 6;
 let aprobados = 0;
 let reprobados = 0;
+let sumaNotas = 0;
 
 alert("A continuación deberás ingresar las notas, sabiendo:");
 alert("*A* Deben ser del 1 al 10");
@@ -185,14 +180,41 @@ alert("*B* Finalizar la carga con la letra *f*");
 do{
     let nota = prompt("Ingresar nota: ");
     alumnoNotas.push(nota);
-    console.log(alumnoNotas.length);
-    console.log(alumnoNotas);
-}while (alumnoNotas.length != cantidadNotas)
+}while (alumnoNotas.length != cantidadNotas )
 
-alumnoNotas.forEach((nota) => 
+function cantAprobaciones (nota , index , array){
     if (nota >= 4){
         aprobados++;
     } else {
-        
+        reprobados++;
     }
-    );
+}
+
+function evaluando (notasEvaluadas, totalAlumnos){
+    let resultado = notasEvaluadas/totalAlumnos*100;
+    return resultado;
+}
+
+alumnoNotas.forEach(cantAprobaciones);
+
+console.log(alumnoNotas)
+console.log("cantidad de aprobados: ",aprobados);
+console.log("cantidad de reprobados: ",reprobados);
+
+let porcentajeAprobados = evaluando (aprobados, alumnoNotas.length);
+console.log("El porcentaje de aprobados es: ", porcentajeAprobados,"%");
+let porcentajeReprobados = evaluando (reprobados, alumnoNotas.length);
+console.log("El porcentaje de aprobados es: ", porcentajeReprobados,"%");
+
+alumnoNotas.forEach((item, index, array) => {
+    sumaNotas = sumaNotas + parseInt(item);
+})
+
+let promedioNotas = sumaNotas / alumnoNotas.length;
+console.log("El promedio de las notas es de: ",promedioNotas);*/
+
+/* Ejercicio 26 
+Se le solicita al usuario que ingrese una cantidad desconocida de números. Realice un programa para calcular e informar:
+a. La sumatoria de los valores ingresados. 
+b. El menor valor ingresado.
+c. El mayor valor ingresado.*/

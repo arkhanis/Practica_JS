@@ -213,8 +213,42 @@ alumnoNotas.forEach((item, index, array) => {
 let promedioNotas = sumaNotas / alumnoNotas.length;
 console.log("El promedio de las notas es de: ",promedioNotas);*/
 
-/* Ejercicio 26 
+/* Ejercicio 26  ********************************************************
 Se le solicita al usuario que ingrese una cantidad desconocida de números. Realice un programa para calcular e informar:
 a. La sumatoria de los valores ingresados. 
 b. El menor valor ingresado.
-c. El mayor valor ingresado.*/
+c. El mayor valor ingresado.
+
+let numeros = [];
+let longitud = 5;
+num = 0;
+sumaTotal = 0;
+
+do{
+    num = prompt("Ingresar numero: ");
+    sumaTotal = parseInt(num) + sumaTotal;
+    numeros.push(num);
+} while (numeros.length != longitud)
+
+console.log("El array ingresado: ", numeros);
+
+let numMayores = numeros;
+numMayores.sort((a, b) => b - a);
+let mayor = numMayores.slice(0,1);
+
+let numMenores = numeros;
+numMenores.sort((a, b) => a - b);
+let menor = numMenores.slice(0,1);
+
+console.log("La suma de todos los numeros es: ", sumaTotal);
+console.log("El numero mayor es: ", mayor);
+console.log("El numero menor es: ", menor);*/
+
+
+/* Ejercicio 18  ********************************************************
+Como resultado de una encuesta se recogen los siguientes datos: sexo (H: Hombre, M: Mujer), edad (en años) y altura (en centímetros). Realice un programa para calcular e informar:
+a. El porcentaje de mujeres mayores a 25 años. b. El porcentaje de hombres menores de 18 años. c. El promedio de edad de las mujeres.
+d. El promedio de altura de los hombres.
+e. La menor edad ingresada.
+f. La mayor altura ingresada*/
+

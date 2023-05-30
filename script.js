@@ -247,8 +247,35 @@ console.log("El numero menor es: ", menor);*/
 
 /* Ejercicio 18  ********************************************************
 Como resultado de una encuesta se recogen los siguientes datos: sexo (H: Hombre, M: Mujer), edad (en años) y altura (en centímetros). Realice un programa para calcular e informar:
-a. El porcentaje de mujeres mayores a 25 años. b. El porcentaje de hombres menores de 18 años. c. El promedio de edad de las mujeres.
+a. El porcentaje de mujeres mayores a 25 años. 
+b. El porcentaje de hombres menores de 18 años. 
+c. El promedio de edad de las mujeres.
 d. El promedio de altura de los hombres.
 e. La menor edad ingresada.
 f. La mayor altura ingresada*/
 
+const datos = [];
+
+class Encuesta {
+    constructor(id, sexo, edad, altura) {
+        this.id       = id.toUpperCase();
+        this.sexo     = sexo.toUpperCase();
+        this.edad     = parseInt(edad);
+        this.altura   = parseInt(altura);
+    }
+}
+
+let index = 0;
+let i= 0;
+
+//do{
+    index = i;
+    console.log(index)
+    let sex = prompt("ingresar *H* si es Hombre, *M* si es mujer");
+    let age = prompt("ingresar la edad");
+    let height = prompt ("Ingresar la altura medida en * cm *");
+    datos.push(new Encuesta(index, sex, age, height));
+    i++ 
+//} while()
+
+console.log(datos);
